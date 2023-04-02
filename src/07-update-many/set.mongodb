@@ -1,0 +1,32 @@
+use('sample_training')
+
+// db.zips.find({ city: 'CLEVELAND'}).count()
+// db.zips.updateMany(
+//     {city:'CLEVELAND'},
+//     {
+//         $set:{
+//             myAttr:'hello'
+//         }
+//     }
+// );
+
+// $rename
+// db.zips.find({ city: 'CLEVELAND'}).count()
+// db.zips.updateMany(
+//     {city:'CLEVELAND'},
+//     {
+//         $rename:{
+//             myAttr:'my_data'
+//         }
+//     }
+// );
+
+//$unset
+db.zips.updateMany(
+    {city:'CLEVELAND'},
+    {
+        $unset:{
+            my_data:''
+        }
+    }
+);

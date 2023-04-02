@@ -1,0 +1,8 @@
+use('sample_training')
+
+db.trips.find({
+    tripduration : {$gte: 120}
+},{
+    tripduration:1,
+    usertype:true
+})

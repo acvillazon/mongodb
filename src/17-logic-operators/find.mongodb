@@ -1,0 +1,44 @@
+use('sample_training')
+
+// db.inspections.find({
+//     sector:'Tax Preparers - 891',
+//     result:'Unable to Locate'
+// });
+
+// db.inspections.find({
+//     $and: [
+//         { sector:'Tax Preparers - 891'},
+//         { result:'Unable to Locate'}
+//     ]
+// }).count();
+
+// db.inspections.find({
+//     $or: [
+//         { sector:'Tax Preparers - 891'},
+//         { result:'Unable to Locate'}
+//     ]
+// }).count();
+
+// db.inspections.find({
+//     $nor: [
+//         { sector:'Tax Preparers - 891'},
+//         { result:'Unable to Locate'}
+//     ]
+// }).count();
+
+// db.inspections.find({
+//     $nor: [
+//         { result:'No Violation Issued'},
+//         { result:'Unable to Locate'}
+//     ]
+// },{
+//     _id:0,
+//     result:true
+// })
+
+// db.inspections.find({
+//     result: { $not : /Unable to Locate/i}
+// },{
+//     _id:0,
+//     result:true
+// })

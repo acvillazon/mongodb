@@ -1,0 +1,9 @@
+use('platzi_store')
+
+db.products.updateOne({
+    _id:4
+},{
+    $inc:{
+        price:100
+    }
+})

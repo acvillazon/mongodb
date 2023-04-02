@@ -1,0 +1,43 @@
+use('sample_training')
+
+// db.trips.findOne({
+//     'start station location.type': 'Point'
+// })
+
+// db.companies.find({
+//     'relationships.0.person.first_name':'Mark'
+// },{
+//     name:1,
+//     relationships:1
+// }).count() 108
+
+// db.companies.find({
+//     'relationships.person.first_name':'Mark'
+// },{
+//     name:1,
+//     relationships:1
+// }).count() 523
+
+// db.companies.find({
+//     relationships:{
+//         $elemMatch:{
+//             'person.first_name':'Mark'
+//         }
+//     }
+// },{
+//     name:1,
+//     relationships:1
+// }).count()
+
+// db.grades.find(
+//     { 'scores.type': 'quiz', 'scores.score': {$gte:95}} 
+// ).count(); //18557
+
+// db.grades.find({
+//     scores:{
+//         $elemMatch:{
+//             score: { $gte: 95},
+//             type: 'quiz'
+//         }
+//     }
+// }).count(); //5080
